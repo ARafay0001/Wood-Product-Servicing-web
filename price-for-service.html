@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="log">
+        <!-- <img src="./assets/logs.jpg" alt=""> -->
+    </div>
+      <header style="background-color: #1E0C06;">
+             <div class="logo">
+                <a href="./index.html"><img src="./assets/logo.png" alt="BIO CWT LOGO"></a>
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/price-for-service.html">Prices for service</a></li>
+                    <li><a href="/index.html">About us</a></li>
+                    <li><a href="/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+      
+         <div class="midTxt">
+            OUR WORK
+        </div>
+
+        <div class="carousel">
+  <div class="carousel-images" id="carouselImages">
+    <img src="./assets/price.png" alt="Image 1" />
+    <img src="./assets/price.png" alt="Image 1" />
+    <img src="./assets/price.png" alt="Image 1" />
+    
+  </div>
+  <button class="arrow left" onclick="moveSlide(-1)">❮</button>
+  <button class="arrow right" onclick="moveSlide(1)">❯</button>
+</div>
+
+
+        
+        <div class="midTxt">
+            THE WOOD WE <br> WORK WITH
+        </div>
+        
+        
+         <div class="midTxt" style="padding-left: 500px;">
+            Any questions?
+        </div>
+        <div class="section">
+            <div class="form">
+                <input placeholder="Your name" type="text">
+                <input placeholder="Your telephone number" type="number">
+                <textarea placeholder="Your Question" name="" id=""></textarea>
+                <div class="button">Submit</div>
+            </div>
+            <div>
+                <p>Write to us and we will be sure to answer all your questions and give you a comprehensive consultation.</p>
+                <img src="./assets/shell.png" alt="">
+            </div>
+        </div>
+       
+
+    </main>
+     <footer>
+            <div><img src="./assets/logo.png" alt=""></div>
+            <div><p><img src="./assets/phone.png" alt="">&nbsp;+420 000 000 000</p></div>
+            <div><p><img src="./assets/map.png" alt="">&nbsp;Na Plzeňce 1166/0 <br>
+150 00</p></div>
+        </footer>
+
+
+    <script>
+
+
+  let currentIndex = 0;
+
+  function moveSlide(direction) {
+    const totalSlides = 3;
+    const carousel = document.getElementById("carouselImages");
+
+    currentIndex += direction;
+
+    if (currentIndex < 0) currentIndex = totalSlides - 1;
+    if (currentIndex >= totalSlides) currentIndex = 0;
+
+    carousel.style.transform = `translateX(-${currentIndex * 1130}px)`;
+  }
+
+
+    </script>
+</body>
+<

@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(34, 32, 33);
+  padding: 0;
+}
+
+main {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  padding: 30px 80px;
+  border-radius: 0 0 3rem 3rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 200px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+header ul a {
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: aliceblue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+header ul a:hover {
+  font-size: 30px;
+}
+
+.hero {
+  display: flex;
+  height: 900px;
+  align-items: center;
+  justify-content: end;
+}
+
+.hero .content1 {
+  width: auto;
+  height: 700px;
+  background-color: #1E0C06;
+  position: relative;
+  right: -60px;
+  border-radius: 32px 0 0 32px;
+  padding: 100px 0;
+  box-shadow: 0 0 16px 24px rgba(242, 240, 240, 0.066);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.hero .content1 .text {
+  width: 49%;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .content1 .text h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 80px;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.hero .content1 .text p {
+  color: #FFDBBB;
+  font-weight: 200;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.hero .content1 .text p span {
+  font-weight: 500;
+}
+
+.hero .content1 .photos {
+  width: 49%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content1 button {
+  background-color: #728BAD;
+  width: 225px;
+  transition: 0.3s;
+  height: 58px;
+  border-radius: 42px;
+  margin-top: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.border {
+  width: 1px;
+  height: 80%;
+  background-color: white;
+}
+
+.photos {
+  display: flex;
+}
+
+.photos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  height: 100%;
+}
+
+.firstImg {
+  padding-top: 30%;
+}
+
+.photos img {
+  width: 200px;
+}
+
+.midTxt {
+  color: white;
+  font-weight: 400;
+  font-size: 80px;
+  font-family: "Inter", sans-serif;
+  padding-left: 160px;
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+
+.log {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  background-image: url(./assets/logs.jpg);
+  opacity: 0.5;
+  width: 908px;
+  height: 1080px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 62px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.cards h1,
+.cards p {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #F5F5F5;
+  line-height: 100%;
+}
+
+.cards p img {
+  margin-right: 10px;
+}
+
+.cards div:hover {
+  transform: scale(1.05);
+}
+
+.cards div .txt {
+  display: block;
+}
+
+.carousel {
+  width: 1130px;
+  height: 754px;
+  margin: 60px auto 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 42px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cantainer {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+
+.cantainer .img img {
+  width: 609px;
+  height: 386px;
+  border-radius: 42px;
+}
+
+.cantainer .txt {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 139%;
+  max-width: 400px;
+}
+
+.midbutton {
+  background-color: #728BAD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  transition: 0.3s;
+  height: 58px;
+  border-radius: 42px;
+  padding: 0 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin: 100px auto;
+}
+
+.content {
+  width: auto;
+  height: 700px;
+  background-color: #1E0C06;
+  position: relative;
+  left: -60px;
+  border-radius: 0 32px 32px 0;
+  padding: 50px 0;
+  box-shadow: 0 0 16px 24px rgba(242, 240, 240, 0.066);
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  color: white;
+}
+
+.content h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 133%;
+  text-transform: uppercase;
+}
+
+.content .text {
+  width: 55%;
+  padding-left: 10%;
+}
+
+.content .photos {
+  width: 40%;
+}
+
+.content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 139%;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 5%;
+}
+
+.section p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 139%;
+  text-align: right;
+}
+
+input,
+textarea {
+  display: block;
+  width: 500px;
+  border: 2px solid white;
+  background-color: rgb(34, 32, 33);
+  border-radius: 2rem;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+input {
+  height: 60px;
+}
+
+textarea {
+  height: 200px;
+  padding-top: 20px;
+}
+
+.section div {
+  width: 49%;
+}
+
+.section img {
+  transform: rotate(-30deg);
+}
+
+.section .button {
+  background-color: #728BAD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  height: 58px;
+  border-radius: 42px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin: 50px 0;
+  padding: 0 40px;
+}
+
+footer {
+  display: flex;
+  box-shadow: 0 0 16px 24px rgba(242, 240, 240, 0.066);
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  align-items: center;
+  font-size: 30px;
+  height: 200px;
+}
+
+footer p img {
+  width: 30px;
+}
+
+/* Hover Effects */
+.section .button:hover,
+.midbutton:hover,
+.content1 button:hover {
+  background-color: white;
+  color: #728BAD;
+}
+
+.section .button:hover,
+.midbutton:hover {
+  cursor: pointer;
+}
